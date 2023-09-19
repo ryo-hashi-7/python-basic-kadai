@@ -1,1 +1,6 @@
+over=10
+under=20
+high=5
+area=(over+under)*high/2
 
+print(str(area)+"㎠")
