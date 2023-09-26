@@ -16,3 +16,19 @@ human_list=[Human("ryo",26),Human("takeshi",21),Human("taro",15),Human("jiro",18
 
 for person in human_list:
     person.check_adult()
+
+
+#リストから特定の人物を探すコード
+target="takeshi"
+found = False
+index = 0
+
+while index < len(human_list):
+    if human_list[index].name == target:
+        print(f"{target} を見つけました。")
+        found = True
+        break
+    index += 1
+
+if found==False:
+    print(f"{target} はリスト内に見つかりませんでした。")
